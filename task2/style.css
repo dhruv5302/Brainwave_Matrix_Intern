@@ -1,0 +1,49 @@
+/* Reset & Body */
+body {
+  margin: 0; font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9; color: #333;
+}
+
+/* Navbar */
+.navbar { background: #333360ca; }
+.navbar-brand { font-weight: bold; color: #fff; }
+.navbar-brand:hover { color: #b69530; }
+.form-control, .form-select { border-radius: 30px; }
+
+/* Hero Banner */
+.hero {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  padding: 60px; color: #fff; text-align: center;
+}
+
+/* Products Grid */
+.product-card {
+  border: none; border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  margin-bottom: 30px; transition: transform .2s;
+}
+.product-card:hover { transform: translateY(-5px); }
+.product-card img {
+  max-height: 180px; object-fit: contain; border-top-left-radius: 16px; border-top-right-radius: 16px;
+}
+.card-body { text-align: center; }
+.card-title { font-size: 1.1rem; margin-bottom: .5rem; }
+.card-text { color: #28a745; font-weight: bold; }
+
+/* Category buttons */
+.category-btn { margin: 5px 8px; border-radius: 30px; }
+.btn-add-to-cart { border-radius: 20px; }
+
+/* Cart Sidebar */
+#cart {
+  position: fixed; right: 20px; top: 80px;
+  width: 320px; background: #fff;
+  padding: 20px; border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  max-height: 80vh; overflow-y: auto; z-index: 999;
+  transition: opacity .3s;
+}
+#cart.hidden { display: none; }
+
+/* Footer */
+footer { background: #1e1e2f; color: #fff; }
